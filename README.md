@@ -1,12 +1,11 @@
 # TEDI guidelines expansion for data collection and sharing
 
-This repository contains a YAML file with a proposed expansion schema of the [TEDI Guidelines](https://www.tedinetwork.org/guidelines/) for Drug Checking Data collection. 
+The mexican project (Programa de Análisis de sustancias - **PAS**) is working together with the NGO [Deliberar](https://deliberar.org/) towards building a national early alert system with their government (**Observatorio Nacional de Drogas**). The Organization of American States (OAS) has entrusted Deliberar representatives to be its advisors for the development of the observatory.
 
-The Mexican project (Programa de Análisis de sustancias - **PAS**) is working together with the NGO [Deliberar](https://deliberar.org/) towards building an Early Alert System with the government (**Observatorio Nacional de Drogas**). The OEA has invited representatives from Deliberar to be their advisors for the development of the observatory. 
+The development of **PAS** provides a suitable framework for developing an open source and standardized toolset for any organization offering Drug-Checking services.
+The toolset will enable an organization to be ready to collect data and will provide them with an easy way to share their data with a global early warning system (i.e. TEDI, [EMCDDA](https://www.emcdda.europa.eu/)). 
 
-**PAS** project provides a suitable framework to develop an open source and standardized toolset for any organization offering Drug-Checking services.
-The toolset will enable an organization to be ready to collect data and will provide them with an easy way to share their data with a Global Early Warning System (i.e. TEDI, [EMCDA](https://www.emcdda.europa.eu/)). 
-
+This repository contains a YAML file with a proposed expansion schema of the [TEDI Guidelines](https://www.tedinetwork.org/guidelines/) for Drug Checking Data collection [`tedi_schema.yaml`](https://github.com/harmreduction/tedi_guidelines/blob/main/tedi_schema.yaml). It's definitions will be implemented during the development and testing of the Observatory's toolset allowing for an oppen contribution to the evaluation and update of the guidelines.
 
 
 ## The general proposal includes:
@@ -23,10 +22,16 @@ The toolset will enable an organization to be ready to collect data and will pro
  
  Based on the current version of the TEDI guidelines, the FAIR-compliant minimal standard will provide an organization with the core information needed for a Drug-Checking service to be able to start working and set up their tools for data collection and sharing.
  
-3. Defining Standard's Expansions TEDI-**Xp** that are context-specific:
+3. Defining TEDI's Standard Expansions -**Xp** that are context-specific:
   
-    - Testing method Xps. Expansion for the data collection according to the performed testing method 
-    - Type of service Xps. Expansion for the data collection according to the type of service (consumption room, festival setting, street outreach)
+    - Testing methods Xps, expansions for the data collection according to the performed testing method 
+    - Types of service Xps, expansions for the data collection according to the type of service (consumption room, festival setting, street outreach)
+
+4. Developing data collection tools implementing the TEDI standards.
+
+    - A prototipe tool using the TEDI schema is under development at: https://github.com/ViewsOnDrugs/deliberar_db
+
+5. Involve existing and future drug-checking services to take part of the development of the standards and data collection tools.
 
 ## Sources:
 

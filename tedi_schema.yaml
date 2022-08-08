@@ -1,0 +1,195 @@
+info:
+  title: TEDI Standards
+  description: proposed expansion schema of the TEDI Guidelines for DATA collection
+  license: ''
+  contact:
+      name: TEDI Network
+      email: ''
+      url: 'https://www.tedinetwork.org/'
+  version: ''
+
+
+definitions:
+  age:
+    DESCRIPTION: .nan
+    REQUIREMENT_LEVEL: recommended
+    TYPE: number
+    VARIABLE_NAME: Age
+  alert:
+    DESCRIPTION: If an alert was issued by the testing organisation
+    REQUIREMENT_LEVEL: required
+    TYPE: bool
+    VARIABLE_NAME: Alert
+  alias:
+    DESCRIPTION: A slang name that the service user used (if any)
+    REQUIREMENT_LEVEL: optional
+    TYPE: text
+    VARIABLE_NAME: Alias (optional)
+  city:
+    DESCRIPTION: The city where the sample was collected from. If this is not available,
+      the city that the sample was tested in should be given.
+    REQUIREMENT_LEVEL: required
+    TYPE: text
+    VARIABLE_NAME: City
+  colour:
+    DESCRIPTION: .nan
+    REQUIREMENT_LEVEL: required
+    TYPE: text
+    VARIABLE_NAME: Colour
+  country:
+    DESCRIPTION: The country of data collection
+    REQUIREMENT_LEVEL: required
+    TYPE: text
+    VARIABLE_NAME: Country
+  date:
+    DESCRIPTION: Date of the analysis
+    REQUIREMENT_LEVEL: required
+    TYPE: timestamp
+    VARIABLE_NAME: Date (yyyy-mm-dd)
+  gender:
+    DESCRIPTION: .nan
+    REQUIREMENT_LEVEL: recommended
+    TYPE: controlled vocabulary
+    VARIABLE_NAME: Gender
+    VOCABULARY:
+    - 
+    - NB
+    - F
+    - M
+  geo_context:
+    DESCRIPTION: A list of geographic contexts from which a sample could originate. E.g. music festival, street
+    REQUIREMENT_LEVEL: recommended
+    TYPE: controlled vocabulary
+    VARIABLE_NAME: Geography/Context (where sample was purchased)
+    VOCABULARY: []
+  height:
+    DESCRIPTION: (Tablets/blotter, not powders etc)
+    REQUIREMENT_LEVEL: recommended
+    TYPE: number
+    VARIABLE_NAME: Height (mm)
+  image:
+    DESCRIPTION: Image of the sample
+    REQUIREMENT_LEVEL: optional
+    TYPE: binary
+    VARIABLE_NAME: Image
+  logo:
+    DESCRIPTION: (Tablets/blotter, not powders etc)
+    REQUIREMENT_LEVEL: recommended
+    TYPE: text
+    VARIABLE_NAME: Logo
+  organisation:
+    DESCRIPTION: The name of the organisation collecting the data
+    REQUIREMENT_LEVEL: required
+    TYPE: text
+    VARIABLE_NAME: Organisation
+  price_currency:
+    DESCRIPTION: .nan
+    REQUIREMENT_LEVEL: recommended
+    TYPE: text
+    VARIABLE_NAME: Price currency
+  provider_relation:
+    DESCRIPTION: A list of options, such as a friend, a stranger, online. This is more important than the geographic context.
+    REQUIREMENT_LEVEL: recommended
+    TYPE: controlled vocabulary
+    VARIABLE_NAME: Relationship with provider
+    VOCABULARY: []
+  sample_form:
+    DESCRIPTION: A fixed list of options (tablet, powder, liquid etc)
+    REQUIREMENT_LEVEL: required
+    TYPE: text
+    VARIABLE_NAME: Sample Form
+  sample_uid:
+    DESCRIPTION: A unique ID value for the sample which will never be re-used for
+      more than one sample
+    REQUIREMENT_LEVEL: required
+    TYPE: uuid
+    VARIABLE_NAME: Sample UID
+  service_type:
+    DESCRIPTION: The context of the service e.g. music event or safer consumption facility
+    REQUIREMENT_LEVEL: recommended
+    TYPE: controlled vocabulary
+    VARIABLE_NAME: Service Type
+    VOCABULARY: []
+  sold_as:
+    DESCRIPTION: What the substance was said to be when it was bought or given to
+      the service user
+    REQUIREMENT_LEVEL: required
+    TYPE: text
+    VARIABLE_NAME: Sold-As
+  subs1_quant:
+    DESCRIPTION: The numerical value of the quantification (if quantified). Excludes
+      units, numerical data only
+    REQUIREMENT_LEVEL: required
+    TYPE: number
+    VARIABLE_NAME: Subst1-Quant
+  subs1_unit:
+    DESCRIPTION: The units of the quantification (if quantified)
+    REQUIREMENT_LEVEL: required
+    TYPE: text
+    VARIABLE_NAME: Subst1-Unit
+  subs9_quant:
+    DESCRIPTION: .nan
+    REQUIREMENT_LEVEL: optional
+    TYPE: number
+    VARIABLE_NAME: Subst9-Quant
+  subs9_unit:
+    DESCRIPTION: .nan
+    REQUIREMENT_LEVEL: optional
+    TYPE: text
+    VARIABLE_NAME: Subst9-Unit
+  substance_1:
+    DESCRIPTION: The identity of the first substance detected
+    REQUIREMENT_LEVEL: required
+    TYPE: text
+    VARIABLE_NAME: Substance-1
+  substance_9:
+    DESCRIPTION: There are 9 columns in total, to allow detection of mixtures. For
+      simplicity, 2-8 are not shown in this document
+    REQUIREMENT_LEVEL: optional
+    TYPE: text
+    VARIABLE_NAME: Substance-9
+  test_method:
+    DESCRIPTION: The analytical method used to obtain the result
+
+      (if multiple methods used, enter most sophisticated)'
+    REQUIREMENT_LEVEL: required
+    TYPE: controlled vocabulary
+    VARIABLE_NAME: Test Method
+    VOCABULARY:
+    - ANTIBODY TEST STRIPS
+    - REAGENT TESTING
+    - TLC
+    - UV SPECTROSCOPY
+    - FTIR/ RAMAN
+    - (U)HPLC-UV
+    - (U)HPLC-MS 
+    - GC-MS
+    - DIRECT MS
+    - LC-HRMS
+  thickness:
+    DESCRIPTION: (Tablets/blotter, not powders etc)
+    REQUIREMENT_LEVEL: recommended
+    TYPE: number
+    VARIABLE_NAME: Thickness (mm)
+  unit_price:
+    DESCRIPTION: .nan
+    REQUIREMENT_LEVEL: recommended
+    TYPE: number
+    VARIABLE_NAME: Price per unit
+  used_prior_test:
+    DESCRIPTION: Whether the sample was consumed by the service user or a close friend
+      before submitting for testing
+    REQUIREMENT_LEVEL: recommended
+    TYPE: bool
+    VARIABLE_NAME: Sample used prior to test
+  weight:
+    DESCRIPTION: (Tablets/blotter, not powders etc)
+    REQUIREMENT_LEVEL: recommended
+    TYPE: number
+    VARIABLE_NAME: Weight (mg)
+  width:
+    DESCRIPTION: (Tablets/blotter, not powders etc)
+    REQUIREMENT_LEVEL: recommended
+    TYPE: number
+    VARIABLE_NAME: Width (mm)
+
