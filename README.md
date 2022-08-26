@@ -36,8 +36,9 @@ This repository contains a YAML file with a proposed expansion schema of the [TE
 ## Sources:
 
 PAS: https://www.analizatusustancia.org/iniciativa.html
-
 TEDI Network https://www.tedinetwork.org/
 
-Deliberar https://deliberar.org/
+## Colaborators:
 
+Deliberar https://deliberar.org/
+VIVID e.V. https://vivid-hamburg.de/
